@@ -1,23 +1,50 @@
 *{
     box-sizing: border-box;
+    
     font-family: 'Courier New', Courier, monospace;
 }
 /**********************************************************/
+body{
+    margin: 0;
+}
+
+/**********************************************************/
+
 div.cabecera{
     border: 1px solid black;
 }
 
+/**********************************************************/
+
 div.navegacion{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    padding: 35px;
     border: 1px solid red;
+    align-items: center;
+    flex-direction: row;
+    top: 0;
+    margin-top: 0;
 }
+
+div.navegacion a{
+    margin: 15px;
+}
+
+/**********************************************************/
 
 div.cuerpo{
     border: 1px solid blue;
 }
 
+/**********************************************************/
+
 div.menuLateral{
     border: 1px solid yellow;
 }
+
+/**********************************************************/
 
 div.footer{
     border: 1px solid green;
