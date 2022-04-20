@@ -1,6 +1,5 @@
 *{
     box-sizing: border-box;
-    
     font-family: 'Courier New', Courier, monospace;
 }
 /**********************************************************/
@@ -52,6 +51,30 @@ div.menuLateral{
 /**********************************************************/
 
 div.footer{
-    clear:both;
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     border: 1px solid green;
+}
+
+.footer .col1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer .col2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer .col3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
