@@ -20,12 +20,12 @@ div.navegacion{
     display: flex;
     justify-content: space-between;
     position: sticky;
-    padding: 35px;
-    border: 1px solid red;
     align-items: center;
     flex-direction: row;
     top: 0;
-    margin-top: 0;
+    padding: 35px;
+    border: 1px solid red;
+    
 }
 
 div.navegacion a{
@@ -35,17 +35,23 @@ div.navegacion a{
 /**********************************************************/
 
 div.cuerpo{
+    width: 70%;
+
+    float: left;
     border: 1px solid blue;
 }
 
 /**********************************************************/
 
 div.menuLateral{
+    width: 30%;
+    float: right;
     border: 1px solid yellow;
 }
 
 /**********************************************************/
 
 div.footer{
+    clear:both;
     border: 1px solid green;
 }
