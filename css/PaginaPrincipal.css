@@ -2,7 +2,9 @@
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
+
 /**********************************************************/
+
 body{
     margin: 0;
 }
@@ -24,7 +26,6 @@ div.navegacion{
     top: 0;
     padding: 35px;
     border: 1px solid red;
-    
 }
 
 div.navegacion a{
@@ -35,8 +36,8 @@ div.navegacion a{
 
 div.cuerpo{
     width: 70%;
-
     float: left;
+    padding: 20px;
     border: 1px solid blue;
 }
 
