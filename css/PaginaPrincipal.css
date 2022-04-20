@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+/**********************************************************/
+div.cabecera{
+    border: 1px solid black;
+}
+
+div.navegacion{
+    border: 1px solid red;
+}
+
+div.cuerpo{
+    border: 1px solid blue;
+}
+
+div.menuLateral{
+    border: 1px solid yellow;
+}
+
+div.footer{
+    border: 1px solid green;
+}
