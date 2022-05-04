@@ -32,31 +32,54 @@
     </div>
 
     <!--Cuerpo de la página-->
+    <div class="contenido">
 
-    <div class="btn_categoria">
-        <button type="button"><img src="imagenes/panes.jpg" alt="Categoría Panes"></button>
-        <button type="button"><img src="imagenes/empanadas.jpg" alt="Categoría Empanadas"></button>
-        <button type="button"><img src="imagenes/dulces.jpg" alt="Categoría Dulces"></button>
-    </div>
-    <?php
-/*        include "conexion.php";
-        session_start();
-        
-        $categoria=mysqli_query($db, "SELECT categoria, foto FROM tcategoria") or die ("Fallo en la consulta");
-            if(mysqli_num_rows($categoria)>0){
-                while($cate=mysqli_fetch_array ($categoria) ) {
+        <?php
+            include "conexion.php";
+            
+            $categoria=mysqli_query($db, "SELECT * FROM tcategoria") or die ("Fallo en la consulta");
+                if(mysqli_num_rows($categoria)>0){
+                    while($cate=mysqli_fetch_array ($categoria) ) {
 
-                    echo "<p>Categoria: ".$cate["categoria"]."<br>";
-                    echo "Foto: <img src='imagenes/".$cate["foto"]."'><br>";
-                    
+                        echo "<div class='btn_categoria'>";
+                            echo "<p>Categoria: ".$cate["categoria"]."</p><br>";
+                            echo "<input type='hidden'><input type='image' src='imagenes/".$cate["foto"]."'>";
+                            echo "<button class='detalles'><a href='detalles.php'>Mostrar ".$cate["categoria"]."</a></button>";
+                        echo "</div>";
+
+                    }
+                } else {
+                    echo "Error Categoria";
                 }
-            } else {
-                echo "Error";
-            }
 
-        mysqli_free_result ($categoria);
-        mysqli_close ($db);
-*/
-    ?>
+            mysqli_free_result ($categoria);
+            mysqli_close ($db);
+
+        ?>
+    </div>
+
+    <!--Footer de la página-->
+    <div class="footer">
+        <div class="col1" >
+            <h2>Políticas</h2>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Política de cookies</a>
+            <a href="#">Aviso legal</a>
+        </div>
+        <div class="col2" >
+            <h2>Horario</h2>
+            <p>Lunes – Sábado: 7:30 – 21:00</p>
+            <p>Domingo: 9:00 – 14:00</p>
+        </div>
+        <div class="col3">
+            <h2>Siguenos en:</h2>
+            <div class="social">
+                <img src="imagenes/facebook.png" alt="facebook" width="50px" height="50px">
+                <img src="imagenes/twitter.png" alt="twitter" width="50px" height="50px">
+                <img src="imagenes/instagram.png" alt="instagram" width="50px" height="50px">
+                <img src="imagenes/pinterest.png" alt="pinterest" width="50px" height="50px">
+            </div> 
+        </div>
+    </div>
 </body>
 </html>

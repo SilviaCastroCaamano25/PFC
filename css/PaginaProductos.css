@@ -71,6 +71,7 @@ div.navegador{
     position: sticky;
     top: 0;
     padding: 10px;
+    z-index: 1;
     border: 1px solid red;
 }
   
@@ -100,9 +101,28 @@ div.submenu a .boton{
 
 /*****************************************************************/
 
+div.contenido{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: 1px solid green;
+}
+
 div.btn_categoria{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
     border: 1px solid royalblue;
+}
+
+div.btn_categoria p{
+    position: relative;
+    top: 7.5px;
+    border: 1px solid orange;
 }
 
 .btn_categoria button{
@@ -110,9 +130,68 @@ div.btn_categoria{
     padding: 0;
 }
 
-.btn_categoria img{
+.btn_categoria input{
     width: 350px;
     height: auto;
-    margin: 0;
-    padding: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.btn_categoria button.detalles{
+    width: 150px;
+    height: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.btn_categoria .detalles a{
+    text-decoration: none;
+}
+
+/***************************************************************/
+
+div.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+    border: 1px solid green;
+}
+
+.footer .col1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px;
+    border: 1px solid darkorchid;
+}
+
+.footer .col1 a{
+    text-decoration: none;
+}
+
+.footer .col2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px;
+    border: 1px solid crimson;
+}
+
+.footer .col3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px;
+    border: 1px solid greenyellow;
+}
+
+.footer .col3 img{
+    width:"50px"; 
+    height:"50px";
+    border: 1px solid purple;
 }
