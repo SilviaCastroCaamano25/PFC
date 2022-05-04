@@ -36,8 +36,26 @@
 
     <!--Cuerpo de la página-->
     <div class="cuerpo">
-        
-        
+        <?php
+            include "conexion.php";
+
+            if($_POST){
+                
+                $vcategoria_producto=mysqli_query($db, "SELECT * FROM vcategoria_producto WHERE categoria=".$_POST['idc']) or die ("Fallo en la consulta");
+                if(mysqli_num_rows($vcategoria_producto)>0){
+                    while($prod=mysqli_fetch_array ($vcategoria_producto) ) {
+                        echo "<p>Producto: ".$prod["producto"]."</p>";
+                        echo "<p>Precio: ".$prod["precio"]."€</p>";
+                        echo "<input type='hidden'><input type='image' id='imagen' src='imagenes/".$prod["foto"]."'>";
+                    }
+                } else {
+                    echo "Error Producto";
+                }
+
+                mysqli_free_result ($vcategoria_producto);
+                mysqli_close ($db);
+            }
+        ?>
     </div>
 
 </body>

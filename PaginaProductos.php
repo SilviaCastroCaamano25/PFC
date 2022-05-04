@@ -41,13 +41,11 @@
                 if(mysqli_num_rows($categoria)>0){
                     while($cate=mysqli_fetch_array ($categoria) ) {
 
-                        echo "<div class='btn_categoria'>";
+                        echo "<div class='btn_categoria'><form method='post' action='detalles.php'>";
                             echo "<p>Categoria: ".$cate["categoria"]."</p><br>";
-                            echo "<input type='hidden'><input type='image' src='imagenes/".$cate["foto"]."'>";
-                            echo "<div class='prueba'>";
-                                echo "<a href='detalles.php'><div class='btn'>Mostrar ".$cate["categoria"]."</div></a>";
-                            echo "</div>";
-                        echo "</div>";
+                            echo "<input type='hidden'><input type='image' id='imagen' src='imagenes/".$cate["foto"]."'>";
+                            echo "<input type='submit' id='idc' name='idc' value='".$cate["categoria"]."'>";
+                        echo "</form></div>";
 
                     }
                 } else {

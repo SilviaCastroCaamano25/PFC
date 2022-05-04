@@ -100,7 +100,6 @@ div.submenu a .boton{
 }
 
 /*****************************************************************/
-
 div.contenido{
     display: flex;
     flex-direction: row;
@@ -111,13 +110,18 @@ div.contenido{
 
 div.btn_categoria{
     display: flex;
+    border: 1px solid royalblue;
+}
+
+div.btn_categoria form{
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-top: 15px;
     margin-bottom: 15px;
-    border: 1px solid royalblue;
+    border: 1px solid red;
 }
 
 div.btn_categoria p{
@@ -126,35 +130,23 @@ div.btn_categoria p{
     border: 1px solid orange;
 }
 
-.btn_categoria button{
-    margin: 0;
-    padding: 0;
+div.btn_categoria input#idc{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3.5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-.btn_categoria input{
+.btn_categoria input#imagen{
     width: 350px;
     height: auto;
     margin-left: 15px;
     margin-right: 15px;
 }
 
-div.prueba{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border: 1px solid indianred;
-}
-  
-div.prueba a{
-    text-decoration: none;
-}
-  
-div.prueba a .btn{
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    letter-spacing: 0.05em;
-    border: 1px solid orange;
-}
 /***************************************************************/
 
 div.footer{
