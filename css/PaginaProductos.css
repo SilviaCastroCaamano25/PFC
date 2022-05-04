@@ -113,6 +113,7 @@ div.btn_categoria{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -137,18 +138,23 @@ div.btn_categoria p{
     margin-right: 15px;
 }
 
-.btn_categoria button.detalles{
-    width: 150px;
-    height: 35px;
+div.prueba{
     margin-top: 15px;
     margin-bottom: 15px;
-    border-radius: 4px;
+    border: 1px solid indianred;
 }
-
-.btn_categoria .detalles a{
+  
+div.prueba a{
     text-decoration: none;
 }
-
+  
+div.prueba a .btn{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    letter-spacing: 0.05em;
+    border: 1px solid orange;
+}
 /***************************************************************/
 
 div.footer{

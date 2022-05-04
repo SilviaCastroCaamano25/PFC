@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+
+/**********************************************************/
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    font-size: 12pt;
+    margin: 0;
+}
+
+/**********************************************************/
+
+div.cabecera{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid blue;
+}
+
+.cabecera img.logotipo{
+    width: 100px;
+    height: auto;
+    border: 1px solid greenyellow;
+}
+
+.cabecera span{
+    font-size: 35px;
+    font-weight: 600;
+    border: 1px solid royalblue;
+}
+
+div.mis_datos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    border: 1px solid indianred;
+}
+  
+div.mis_datos a{
+    text-decoration: none;
+}
+  
+div.mis_datos a .btn{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    letter-spacing: 0.05em;
+    border: 1px solid orange;
+}
+  
+div.mis_datos img {
+    height: 36px;
+    margin-left: 3.5px;
+    margin-right: 5.5px;
+}
+
+/**********************************************************/
+
+div.navegador{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    z-index: 1;
+    border: 1px solid red;
+}
+  
+div.submenu{
+    width: 150px;
+    border-radius: 4px;
+    margin: 3.5px;
+    padding: 5px;
+    border: 1px solid blue;
+}
+  
+div.submenu a{
+    text-decoration: none;
+}
+  
+div.submenu a .boton{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.05em;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid purple;
+}
+
+/**********************************************************/
+
+div.cuerpo{
+    border: 1px solid blue;
+}

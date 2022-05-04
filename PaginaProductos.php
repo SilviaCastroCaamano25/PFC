@@ -12,7 +12,7 @@
     <!--Cabecera de la página-->
     <div class="cabecera">
         <img class="logotipo" src="./imagenes/logotipo.png" alt="logotipo">
-        <span>Panadería Pallares</span>
+        <span>Panadería Fariña</span>
 
         <div class="mis_datos">
             <a href="#"><div class="btn"><img src="./imagenes/log_in.png" alt="Log_in">Iniciar Sesión</div></a>
@@ -44,7 +44,9 @@
                         echo "<div class='btn_categoria'>";
                             echo "<p>Categoria: ".$cate["categoria"]."</p><br>";
                             echo "<input type='hidden'><input type='image' src='imagenes/".$cate["foto"]."'>";
-                            echo "<button class='detalles'><a href='detalles.php'>Mostrar ".$cate["categoria"]."</a></button>";
+                            echo "<div class='prueba'>";
+                                echo "<a href='detalles.php'><div class='btn'>Mostrar ".$cate["categoria"]."</div></a>";
+                            echo "</div>";
                         echo "</div>";
 
                     }
