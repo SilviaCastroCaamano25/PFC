@@ -39,9 +39,10 @@
         <?php
             include "conexion.php";
 
+            $idc=$_POST["idc"];
             if($_POST){
                 
-                $vcategoria_producto=mysqli_query($db, "SELECT * FROM vcategoria_producto WHERE categoria=".$_POST['idc']) or die ("Fallo en la consulta");
+                $vcategoria_producto=mysqli_query($db, "SELECT * FROM vcategoria_producto WHERE categoria='$idc'") or die ("Fallo en la consulta");
                 if(mysqli_num_rows($vcategoria_producto)>0){
                     while($prod=mysqli_fetch_array ($vcategoria_producto) ) {
                         echo "<p>Producto: ".$prod["producto"]."</p>";
