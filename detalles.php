@@ -45,9 +45,11 @@
                 $vcategoria_producto=mysqli_query($db, "SELECT * FROM vcategoria_producto WHERE categoria='$idc'") or die ("Fallo en la consulta");
                 if(mysqli_num_rows($vcategoria_producto)>0){
                     while($prod=mysqli_fetch_array ($vcategoria_producto) ) {
-                        echo "<p>Producto: ".$prod["producto"]."</p>";
-                        echo "<p>Precio: ".$prod["precio"]."€</p>";
-                        echo "<input type='hidden'><input type='image' id='imagen' src='imagenes/".$prod["foto"]."'>";
+                        echo "<div class='produc'>";
+                            echo "<p><span>Producto: </span>".$prod["producto"]."</p>";
+                            echo "<p><span>Precio: </span>".$prod["precio"]."€</p>";
+                            echo "<input type='hidden'><input type='image' id='imagen' style='width: 250px; border: 1px solid orange;' src='imagenes/".$prod["foto"]."'>";
+                        echo "</div>";
                     }
                 } else {
                     echo "Error Producto";
@@ -57,6 +59,30 @@
                 mysqli_close ($db);
             }
         ?>
+    </div>
+
+    <!--Footer de la página-->
+    <div class="footer">
+        <div class="col1" >
+            <h2>Políticas</h2>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Política de cookies</a>
+            <a href="#">Aviso legal</a>
+        </div>
+        <div class="col2" >
+            <h2>Horario</h2>
+            <p>Lunes – Sábado: 7:30 – 21:00</p>
+            <p>Domingo: 9:00 – 14:00</p>
+        </div>
+        <div class="col3">
+            <h2>Siguenos en:</h2>
+            <div class="social">
+                <img src="imagenes/facebook.png" alt="facebook" width="50px" height="50px">
+                <img src="imagenes/twitter.png" alt="twitter" width="50px" height="50px">
+                <img src="imagenes/instagram.png" alt="instagram" width="50px" height="50px">
+                <img src="imagenes/pinterest.png" alt="pinterest" width="50px" height="50px">
+            </div> 
+        </div>
     </div>
 
 </body>

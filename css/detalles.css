@@ -102,5 +102,77 @@ div.submenu a .boton{
 /**********************************************************/
 
 div.cuerpo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
     border: 1px solid blue;
+}
+
+div.produc{
+    max-width: 255px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 15px;
+    border: 1px solid greenyellow;
+}
+
+div.produc p{
+    text-align: center;
+}
+
+div.produc p span{
+    font-weight: 700;
+}
+
+/*********************************************************************/
+
+div.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+    margin-top: 64px;
+    border: 1px solid green;
+}
+
+.footer .col1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px;
+    border: 1px solid darkorchid;
+}
+
+.footer .col1 a{
+    text-decoration: none;
+}
+
+.footer .col2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px;
+    border: 1px solid crimson;
+}
+
+.footer .col3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px;
+    border: 1px solid greenyellow;
+}
+
+.footer .col3 img{
+    width:"50px"; 
+    height:"50px";
+    border: 1px solid purple;
 }

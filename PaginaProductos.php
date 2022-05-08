@@ -42,7 +42,7 @@
                     while($cate=mysqli_fetch_array ($categoria) ) {
 
                         echo "<div class='btn_categoria'><form method='post' action='detalles.php'>";
-                            echo "<p>Categoria: ".$cate["categoria"]."</p><br>";
+                            echo "<p><span>Categoria: </span>".$cate["categoria"]."</p><br>";
                             echo "<input type='hidden'><input type='image' id='imagen' src='imagenes/".$cate["foto"]."'>";
                             echo "<input type='submit' id='idc' name='idc' value='".$cate["categoria"]."'>";
                         echo "</form></div>";

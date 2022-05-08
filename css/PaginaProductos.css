@@ -130,6 +130,10 @@ div.btn_categoria p{
     border: 1px solid orange;
 }
 
+div.btn_categoria p span{
+    font-weight: 700;
+}
+
 div.btn_categoria input#idc{
     width: 150px;
     display: flex;
