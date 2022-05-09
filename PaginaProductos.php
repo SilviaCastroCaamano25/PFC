@@ -25,10 +25,8 @@
     <div class="navegador">
         <div class="submenu"><a href="PaginaPrincipal.html"><div class="boton">Nosotros</div></a></div>
         <div class="submenu"><a href="PaginaProductos.php"><div class="boton">Productos</div></a></div>
-        <div class="submenu"><a href="#"><div class="boton">Panes</div></a></div>
-        <div class="submenu"><a href="#"><div class="boton">Empanadas</div></a></div>
-        <div class="submenu"><a href="#"><div class="boton">Dulces</div></a></div>
         <div class="submenu"><a href="#"><div class="boton">Contáctanos</div></a></div>
+        <div class="submenu"><a href="#"><div class="boton">Ubicación</div></a></div>
     </div>
 
     <!--Cuerpo de la página-->

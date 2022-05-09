@@ -98,60 +98,43 @@ div.submenu a .boton{
     border-radius: 4px;
     border: 1px solid purple;
 }
-
 /**********************************************************/
 
 div.cuerpo{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    border: 1px solid blue;
+    justify-content: center;
+    border: 1px solid green;
 }
 
-div.produc{
-    max-width: 300px;
-    display: flex;
-    margin-left: 15px;
-    margin-right: 15px;
-    border: 1px solid greenyellow;
-}
-
-div.produc form{
+div.producto{
+    min-width: 50%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border: 1px solid palevioletred;
+    border: 1px solid darkred;
 }
 
-div.produc p{
-    text-align: center;
-    position: relative;
-    top: 7.5px;
-    border: 1px solid orange;
-}
-
-div.produc p span{
+.cuerpo .producto p{
+    font-size: 24px;
     font-weight: 700;
 }
 
-div.produc input#idp{
-    max-width: 265px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 3.5px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+div input#imagen{
+    width: 400px;
+    height: auto;
 }
 
-.produc input#imagen{
-    width: 250px;
-    height: auto;
+div.ingredientes{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid slateblue;
+}
+
+div.ingredientes p.ing{
+    margin-top: 15px;
     margin-left: 15px;
     margin-right: 15px;
 }
@@ -163,7 +146,7 @@ div.footer{
     flex-direction: row;
     justify-content: space-evenly;
     margin-bottom: 0;
-    margin-top: 64px;
+    margin-top: 15px;
     border: 1px solid green;
 }
 

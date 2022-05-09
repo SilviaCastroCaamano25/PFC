@@ -25,13 +25,8 @@
     <div class="navegador">
         <div class="submenu"><a href="PaginaPrincipal.html"><div class="boton">Nosotros</div></a></div>
         <div class="submenu"><a href="PaginaProductos.php"><div class="boton">Productos</div></a></div>
-        <div class="submenu"><a href="#"><div class="boton">Panes</div></a></div>
-        <div class="submenu"><a href="#"><div class="boton">Empanadas</div></a></div>
-        <div class="submenu"><a href="#"><div class="boton">Bolleria Salada</div></a></div>
-        <div class="submenu"><a href="#"><div class="boton">Bolleria Dulce</div></a></div>
-        <div class="submenu"><a href="#"><div class="boton">Chocolates y Bombones</div></a></div>
-        <div class="submenu"><a href="#"><div class="boton">Navidades y Festivos</div></a></div>
         <div class="submenu"><a href="#"><div class="boton">Contáctanos</div></a></div>
+        <div class="submenu"><a href="#"><div class="boton">Ubicación</div></a></div>
     </div>
 
     <!--Cuerpo de la página-->
@@ -48,7 +43,7 @@
                         echo "<div class='produc'><form method='post' action='detalles_producto.php'>";
                             echo "<p><span>Producto: </span>".$prod["producto"]."</p>";
                             echo "<p><span>Precio: </span>".$prod["precio"]."€</p>";
-                            echo "<input type='hidden'><input type='image' id='imagen' style='width: 250px; border: 1px solid orange;' src='imagenes/".$prod["foto"]."'>";
+                            echo "<input type='hidden'><input type='image' id='imagen' src='imagenes/".$prod["foto"]."'>";
                             echo "<input type='submit' id='idp' name='idp' value='".$prod["producto"]."'>";
                         echo "</form></div>";
                     }

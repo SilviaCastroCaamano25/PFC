@@ -66,7 +66,7 @@ div.mis_datos img {
 div.navegador{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     position: sticky;
     top: 0;
@@ -129,6 +129,7 @@ div.footer{
     flex-direction: row;
     justify-content: space-evenly;
     margin-bottom: 0;
+    margin-top: 15px;
     border: 1px solid green;
 }
 
