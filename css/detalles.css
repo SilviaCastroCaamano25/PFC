@@ -106,27 +106,54 @@ div.cuerpo{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
-    padding: 15px;
     border: 1px solid blue;
 }
 
 div.produc{
-    max-width: 255px;
+    max-width: 300px;
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 1px solid greenyellow;
+}
+
+div.produc form{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     margin-top: 15px;
-    border: 1px solid greenyellow;
+    margin-bottom: 15px;
+    border: 1px solid palevioletred;
 }
 
 div.produc p{
     text-align: center;
+    position: relative;
+    top: 7.5px;
+    border: 1px solid orange;
 }
 
 div.produc p span{
     font-weight: 700;
+}
+
+div.produc input#idp{
+    max-width: 265px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3.5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.produc input#imagen{
+    width: 350px;
+    height: auto;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 /*********************************************************************/
