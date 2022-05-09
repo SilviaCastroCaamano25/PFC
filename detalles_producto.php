@@ -76,10 +76,10 @@
         <div class="col3">
             <h2>Siguenos en:</h2>
             <div class="social">
-                <img src="imagenes/facebook.png" alt="facebook" width="50px" height="50px">
-                <img src="imagenes/twitter.png" alt="twitter" width="50px" height="50px">
-                <img src="imagenes/instagram.png" alt="instagram" width="50px" height="50px">
-                <img src="imagenes/pinterest.png" alt="pinterest" width="50px" height="50px">
+                <a href="https://es-es.facebook.com"><img src="imagenes/facebook.png" alt="facebook" width="50px" height="50px"></a>
+                <a href="https://twitter.com"><img src="imagenes/twitter.png" alt="twitter" width="50px" height="50px"></a>
+                <a href="https://www.instagram.com"><img src="imagenes/instagram.png" alt="instagram" width="50px" height="50px"></a>
+                <a href="https://www.pinterest.es"><img src="imagenes/pinterest.png" alt="pinterest" width="50px" height="50px"></a>
             </div> 
         </div>
     </div>
