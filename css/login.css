@@ -65,7 +65,7 @@ main{
     color: olivedrab;
 }
 
-/************************************************/
+/*Formularios***********************************************/
 
 .contenedor_login_register{
     display: flex;
@@ -123,7 +123,7 @@ div.contenedor_login_register form{
     display: none;
 }
 
-/*****************************************************/
+/*Haciendo responsiva la página****************************************************/
 
 @media screen and (max-width: 850px){
     main{
