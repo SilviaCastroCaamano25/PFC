@@ -47,7 +47,12 @@
                         echo "</div>";
 
                         echo "<div class='ingredientes'>";
-                            echo "<p class='ing'>".$desc["ingredientes"]."</p>";
+                                $cadena = $desc["ingredientes"];
+                                $array = explode(",", $cadena);
+                                foreach ( $array as $palabra ){
+                                    echo $palabra."<br><br>";
+                                }
+                            
                         echo "</div>";
                     }
                 } else {

@@ -130,13 +130,10 @@ div.ingredientes{
     width: 50%;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-weight: 600;
     border: 1px solid slateblue;
-}
-
-div.ingredientes p.ing{
-    margin-top: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
 }
 
 /*********************************************************************/
