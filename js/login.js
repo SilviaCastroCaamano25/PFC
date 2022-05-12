@@ -11,8 +11,7 @@ function register(){
     formulario_register.style.display = "block";
     formulario_login.style.display = "none";
     
-    contenedor_login_register.style.left = "100px";
+    contenedor_login_register.style.left = "410px";
 
-    caja_trasera_register.style.opacity = "0";
     caja_trasera_login.style.opacity = "1";
 }
