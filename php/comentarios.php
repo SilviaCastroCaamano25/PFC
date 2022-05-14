@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panadería</title>
     <link rel="shortcut icon" href="../imagenes/favicon.ico" />
-    <link rel="stylesheet" href="..\css\detalles.css">
+    <link rel="stylesheet" type="text/css" href="..\css\comentarios.css">
 </head>
 <body>
     <!--Cabecera de la página-->
@@ -31,31 +31,29 @@
     </div>
 
     <!--Cuerpo de la página-->
-    <div class="cuerpo">
+    <div class="contenido">
+
         <?php
             include "conexion.php";
             session_start();
 
-            $idc=$_POST["idc"];
-            if($_POST){
-                
-                $vcategoria_producto_ingrediente=mysqli_query($db, "SELECT * FROM vcategoria_producto_ingrediente WHERE categoria='$idc'") or die ("Fallo en la consulta");
-                if(mysqli_num_rows($vcategoria_producto_ingrediente)>0){
-                    while($prod=mysqli_fetch_array ($vcategoria_producto_ingrediente) ) {
-                        echo "<div class='produc'><form method='post' action='detalles_producto.php'>";
-                            echo "<p><span>Producto: </span>".$prod["producto"]."</p>";
-                            echo "<p><span>Precio: </span>".$prod["precio"]."€</p>";
-                            echo "<input type='hidden'><input type='image' id='imagen' src='../imagenes/".$prod["foto"]."'>";
-                            echo "<input type='submit' id='idp' name='idp' value='".$prod["producto"]."'>";
-                        echo "</form></div>";
+            $vcomentarios_usuarios=mysqli_query($db, "SELECT * FROM vcomentarios_usuarios") or die ("Fallo en la consulta");
+                if(mysqli_num_rows($vcomentarios_usuarios)>0){
+                    while($com=mysqli_fetch_array ($vcomentarios_usuarios) ) {
+
+                        echo "<div class='comentario'>";
+                            echo "<p><span>Usuario: </span>".$com["usuario"]."<br><br>";
+                            echo "<span>Comentario: </span>".$com["comentario"]."</p><br>";
+                        echo "</div>";
+
                     }
                 } else {
-                    echo "Error Producto";
+                    echo "Error Comentarios";
                 }
 
-                mysqli_free_result ($vcategoria_producto_ingrediente);
-                mysqli_close ($db);
-            }
+            mysqli_free_result ($vcomentarios_usuarios);
+            mysqli_close ($db);
+
         ?>
     </div>
 
@@ -82,6 +80,5 @@
             </div> 
         </div>
     </div>
-
 </body>
 </html>
