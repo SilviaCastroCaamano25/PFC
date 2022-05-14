@@ -42,7 +42,7 @@
 
                         echo "<div class='comentario'>";
                             echo "<p><span>Usuario: </span>".$com["usuario"]."</p>";
-                            echo "<span style='margin-left:20px;';>Comentario: </span><p style='border: 1px solid black; padding: 20px;'>".$com["comentario"]."</p><br>";
+                            echo "<span style='margin-left:20px;';>Comentario: </span><p style='border: 1px solid black; padding: 20px; border-radius:4px;'>".$com["comentario"]."</p><br>";
                         echo "</div>";
 
                     }
@@ -70,7 +70,7 @@
             <p>Domingo: 9:00 – 14:00</p>
         </div>
         <div class="col3">
-            <h2>Siguenos en:</h2>
+            <h3>Siguenos en:</h3>
             <div class="social">
                 <a href="https://es-es.facebook.com"><img src="../imagenes/facebook.png" alt="facebook" width="50px" height="50px"></a>
                 <a href="https://twitter.com"><img src="../imagenes/twitter.png" alt="twitter" width="50px" height="50px"></a>

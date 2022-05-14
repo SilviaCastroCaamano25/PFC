@@ -6,10 +6,6 @@
     font-family: sans-serif;
 }
 
-body{
-    background-color: aquamarine;
-}
-
 main{
     width: 100%;
     padding: 20px;
@@ -33,12 +29,10 @@ main{
     padding: 10px 20px;
     display: flex;
     justify-content: center;
-    background-color: orange;
 }
 
 .caja_trasera div{
     margin: 100px 40px;
-    color: white;
     transition: all 500ms;
 }
 
@@ -54,19 +48,12 @@ main{
 
 .caja_trasera button{
     padding: 10px 40px;
-    border: 2px solid white;
     background: transparent;
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
-    color: white;
     outline: none;
     transition: all 300ms;
-}
-
-.caja_trasera button:hover{
-    background-color: red;
-    color: olivedrab;
 }
 
 /*CSS de los formularios de login y register*/
@@ -86,7 +73,6 @@ main{
 div.contenedor_login_register form{
     width: 100%;
     padding: 40px 20px;
-    background: darkorchid;
     position: absolute;
     border-radius: 20px;
 }
@@ -95,7 +81,6 @@ div.contenedor_login_register form{
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
-    color: gold;
 }
 
 .contenedor_login_register form input{
@@ -103,7 +88,6 @@ div.contenedor_login_register form{
     margin-top: 20px;
     padding: 10px;
     border: none;
-    background: brown;
     font-size: 16px;
     outline: none;
 }
@@ -113,8 +97,6 @@ div.contenedor_login_register form{
     margin-top: 40px;
     border: none;
     font-size: 14px;
-    background: yellowgreen;
-    color: white;
     cursor: pointer;
     outline: none;
 }
@@ -156,4 +138,112 @@ div.contenedor_login_register form{
     div.contenedor_login_register form{
         position: relative;
     }
+}
+
+
+
+/*Modo claro de la página*/
+@media (prefers-color-scheme: light){
+    
+    body{
+        background-color: white;
+    }
+
+    /*Modo claro de las cajas traseras*/
+    .caja_trasera{
+        background-color: #ffae6a;
+        border: 1px solid black;
+    }
+
+    .caja_trasera div{
+        color: black;
+    }
+
+    .caja_trasera button{
+        border: 2px solid black;
+        color: black;
+    }
+
+    .caja_trasera button:hover{
+        background-color: #ff8243;
+        box-shadow: 10px 5px 5px #c65314;
+    }
+
+    /*Modo claro de los formularios*/
+    div.contenedor_login_register form{
+        background: #ff8243;
+        border: 1px solid black;
+    }
+    
+    .contenedor_login_register form h2{
+        color: black;
+    }
+    
+    .contenedor_login_register form input{
+        background: #ffae6a;
+    }
+    
+    .contenedor_login_register form button{
+        background-color: #ff8243;
+        border: 2px solid black;
+        color: black;
+    }
+
+    .contenedor_login_register form button:hover{
+        box-shadow: 10px 5px 5px #c65314;
+    }
+
+}
+
+/*Modo oscuro de la página*/
+@media (prefers-color-scheme: dark){
+
+    body{
+        background-color: rgb(31, 31, 31);
+    }
+
+    /*Modo oscuro de las cajas traseras*/
+    .caja_trasera{
+        background-color: #ea9247;
+        border: 1px solid white;
+    }
+
+    .caja_trasera div{
+        color: white;
+    }
+
+    .caja_trasera button{
+        border: 2px solid white;
+        color: white;
+    }
+
+    .caja_trasera button:hover{
+        background-color: #d2691e;
+        box-shadow: 10px 5px 5px #9b3c00;
+    }
+
+    /*Modo oscuro de los formularios*/
+    div.contenedor_login_register form{
+        background: #d2691e;
+        border: 1px solid white;
+    }
+    
+    .contenedor_login_register form h2{
+        color: white;
+    }
+    
+    .contenedor_login_register form input{
+        background: #ea9247;
+    }
+    
+    .contenedor_login_register form button{
+        background-color: #d2691e;
+        border: 2px solid white;
+        color: white;
+    }
+
+    .contenedor_login_register form button:hover{
+        box-shadow: 10px 5px 5px #9b3c00;
+    }
+
 }

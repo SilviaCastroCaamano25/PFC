@@ -2,16 +2,14 @@
     box-sizing: border-box;
 }
 
-/**********************************************************/
-
 body{
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 300;
-    font-size: 12pt;
+    font-size: 18px;
     margin: 0;
 }
 
-/**********************************************************/
+/*Estilos de la cabecera de la página*/
 
 div.cabecera{
     width: 100%;
@@ -20,19 +18,16 @@ div.cabecera{
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    border: 1px solid blue;
 }
 
 .cabecera img.logotipo{
     width: 100px;
     height: auto;
-    border: 1px solid greenyellow;
 }
 
 .cabecera span{
     font-size: 35px;
     font-weight: 600;
-    border: 1px solid royalblue;
 }
 
 div.mis_datos{
@@ -40,11 +35,15 @@ div.mis_datos{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-end;
-    border: 1px solid indianred;
 }
   
 div.mis_datos a{
     text-decoration: none;
+    padding: 5px;
+}
+
+div.mis_datos a:hover{
+    font-weight: 600;
 }
   
 div.mis_datos a .btn{
@@ -52,7 +51,7 @@ div.mis_datos a .btn{
     align-items: center;
     padding: 5px;
     letter-spacing: 0.05em;
-    border: 1px solid orange;
+    border-radius: 4px;
 }
   
 div.mis_datos img {
@@ -61,7 +60,8 @@ div.mis_datos img {
     margin-right: 5.5px;
 }
 
-/**********************************************************/
+
+/*Estilos del navegador de la página*/
 
 div.navegador{
     display: flex;
@@ -72,7 +72,6 @@ div.navegador{
     top: 0;
     padding: 10px;
     z-index: 1;
-    border: 1px solid red;
 }
   
 div.submenu{
@@ -80,11 +79,14 @@ div.submenu{
     border-radius: 4px;
     margin: 3.5px;
     padding: 5px;
-    border: 1px solid blue;
 }
   
 div.submenu a{
     text-decoration: none;
+}
+
+div.submenu a .boton:hover{
+    font-weight: 600;
 }
   
 div.submenu a .boton{
@@ -96,16 +98,16 @@ div.submenu a .boton{
     letter-spacing: 0.05em;
     padding: 5px;
     border-radius: 4px;
-    border: 1px solid purple;
 }
-/**********************************************************/
+
+
+/*Estilos del cuerpo de la página*/
 
 div.cuerpo{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    border: 1px solid green;
 }
 
 div.producto{
@@ -113,7 +115,6 @@ div.producto{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid darkred;
 }
 
 .cuerpo .producto p{
@@ -133,19 +134,22 @@ div.ingredientes{
     padding-top: 15px;
     padding-left: 15px;
     font-weight: 600;
-    border: 1px solid slateblue;
 }
 
-/*********************************************************************/
+
+/*Estilos del footer de la página*/
 
 div.footer{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin-bottom: 0;
-    margin-top: 15px;
-    border: 1px solid green;
 }
+
+.footer .col1 h3{
+    text-decoration: underline;
+}
+
 
 .footer .col1{
     display: flex;
@@ -153,7 +157,10 @@ div.footer{
     justify-content: space-between;
     align-items: flex-start;
     padding: 15px;
-    border: 1px solid darkorchid;
+}
+
+.footer .col1 h3{
+    text-decoration: underline;
 }
 
 .footer .col1 a{
@@ -166,7 +173,10 @@ div.footer{
     justify-content: flex-start;
     align-items: flex-start;
     padding: 15px;
-    border: 1px solid crimson;
+}
+
+.footer .col2 h3{
+    text-decoration: underline;
 }
 
 .footer .col3{
@@ -175,11 +185,177 @@ div.footer{
     justify-content: flex-start;
     align-items: flex-start;
     padding: 15px;
-    border: 1px solid greenyellow;
+}
+
+.footer .col3 h3{
+    text-decoration: underline;
 }
 
 .footer .col3 img{
     width:"50px"; 
     height:"50px";
-    border: 1px solid purple;
+}
+
+
+
+/*Modo claro de la página*/
+@media (prefers-color-scheme: light){
+    body{
+        background-color: #ffae6a;
+    }
+
+    /*Modo claro de la cabecera*/
+    .cabecera{
+        background-color: #e26a2c;
+    }
+
+    div.mis_datos a{
+        color: black;
+    }
+
+    div.mis_datos a .btn{
+        background-color: #ffae6a;
+        border: 1px solid black;
+    }
+
+    div.mis_datos a .btn:hover{
+        background-color: #ff8243;
+        box-shadow: 10px 5px 5px #c65314;
+    }
+
+    /*Modo claro del navegador*/
+    .navegador{
+        background-color: #ffd792;
+    }
+
+    div.submenu{
+        background-color: #ffae6a;
+        border: 1px solid black;
+    }
+
+    div.submenu:hover{
+        background-color: #ff8243;
+        box-shadow: 10px 5px 5px #c65314;
+    }
+
+    div.submenu a .boton{
+        color: black;
+    }
+
+    /*Modo claro del cuerpo*/
+    div.producto{
+        background-color: #ffae6a;
+    }
+
+    div.ingredientes{
+        background-color: #ffae6a;
+    }
+
+
+
+    /*Modo claro del footer*/
+    .footer{
+        background-color: #ffd792;
+    }
+
+    .footer .col1{
+        background-color: #ffae6a;
+        border: 1px solid black;
+    }
+
+    .footer .col1 a{
+        color: black;
+    }
+
+    .footer .col2{
+        background-color: #ffae6a;
+        border: 1px solid black;
+    }
+
+    .footer .col3{
+        background-color: #ffae6a;
+        border: 1px solid black;
+    }
+
+}
+
+
+/*Modo oscuro de la página*/
+@media (prefers-color-scheme: dark){
+    body{
+        background-color: #d2691e;
+        color: white;
+    }
+
+    /*Modo oscuro de la cabecera*/
+    .cabecera{
+        background-color: #b6520f;
+    }
+
+    div.mis_datos a{
+        color: white;
+    }
+
+    div.mis_datos a .btn{
+        background-color: #ea9247;
+        border: 1px solid white;
+    }
+
+    div.mis_datos a .btn:hover{
+        background-color: #d2691e;
+        box-shadow: 10px 5px 5px #9b3c00;
+    }
+
+    /*Modo oscuro del navegador*/
+    .navegador{
+        background-color: #ea9247;
+    }
+
+    div.submenu{
+        background-color: #d2691e;
+        border: 1px solid white;
+    }
+
+    div.submenu:hover{
+        background-color: #d2691e;
+        box-shadow: 10px 5px 5px #9b3c00;
+    }
+
+    div.submenu a .boton{
+        color: white;
+    }
+
+    /*Modo oscuro del cuerpo*/
+    div.producto{
+        background-color: #d2691e;
+    }
+
+    div.ingredientes{
+        background-color: #d2691e;
+    }
+
+
+    /*Modo oscuro del footer*/
+    .footer{
+        background-color: #ea9247;
+    }
+
+    .footer .col1{
+        background-color: #d2691e;
+        border: 1px solid white;
+    }
+
+    .footer .col1 a{
+        color: white;
+    }
+
+    .footer .col2{
+        background-color: #d2691e;
+        border: 1px solid white;
+    }
+
+    .footer .col3{
+        background-color: #d2691e;
+        border: 1px solid white;
+    }
 }

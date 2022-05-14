@@ -60,18 +60,18 @@
     <!--Footer de la página-->
     <div class="footer">
         <div class="col1" >
-            <h2>Políticas</h2>
+            <h3>Políticas</h3>
             <a href="#">Política de privacidad</a>
             <a href="#">Política de cookies</a>
             <a href="#">Aviso legal</a>
         </div>
         <div class="col2" >
-            <h2>Horario</h2>
+            <h3>Horario</h3>
             <p>Lunes – Sábado: 7:30 – 21:00</p>
             <p>Domingo: 9:00 – 14:00</p>
         </div>
         <div class="col3">
-            <h2>Siguenos en:</h2>
+            <h3>Siguenos en:</h3>
             <div class="social">
                 <a href="https://es-es.facebook.com"><img src="../imagenes/facebook.png" alt="facebook" width="50px" height="50px"></a>
                 <a href="https://twitter.com"><img src="../imagenes/twitter.png" alt="twitter" width="50px" height="50px"></a>
