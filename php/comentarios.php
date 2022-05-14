@@ -42,8 +42,8 @@
                     while($com=mysqli_fetch_array ($vcomentarios_usuarios) ) {
 
                         echo "<div class='comentario'>";
-                            echo "<p><span>Usuario: </span>".$com["usuario"]."<br><br>";
-                            echo "<span>Comentario: </span>".$com["comentario"]."</p><br>";
+                            echo "<p><span>Usuario: </span>".$com["usuario"]."</p>";
+                            echo "<span style='margin-left:20px;';>Comentario: </span><p style='border: 1px solid black; padding: 20px;'>".$com["comentario"]."</p><br>";
                         echo "</div>";
 
                     }
