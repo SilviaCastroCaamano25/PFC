@@ -28,9 +28,9 @@
     if(strlen($password) < 8){
         echo '<script>
                 alert("La contraseña debe tener 8 o más caracteres");
-                window.location = "../login.html";
+                window.location = "../login_formulario.php";
               </script>';
-        exit();
+        exit;
     } else {
         echo 'Error en la verificación de la contraseña';
     }
@@ -42,9 +42,9 @@
     if(mysqli_num_rows($verificar) > 0){
         echo '<script>
                 alert("Este correo ya está registrado");
-                window.location = "../login.html";
+                window.location = "../login_formulario.php";
               </script>';
-        exit();
+        exit;
     } else {
         echo 'Error en la verificación del correo';
     }
@@ -56,9 +56,9 @@
     if(mysqli_num_rows($verificar_usuario) > 0){
         echo '<script>
                 alert("Este usuario ya está registrado");
-                window.location = "../login.html";
+                window.location = "../login_formulario.php";
               </script>';
-        exit();
+        exit;
     } else {
         echo 'Error en la verificación del usuario';
     }
@@ -73,10 +73,11 @@
                 alert("Usuario Registrado");
                 window.location = "../PaginaPrincipal.html";
              </script>';
+        exit;
     } else {
         echo '<script>
                 alert("Prueba otra vez, usuario no registrado");
-                window.location = "../login.html";
+                window.location = "../login_formulario.php";
              </script>';
     }
 

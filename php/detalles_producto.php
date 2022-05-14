@@ -15,7 +15,7 @@
         <span>Panadería Fariña</span>
 
         <div class="mis_datos">
-            <a href="#"><div class="btn"><img src="../imagenes/log_in.png" alt="Log_in">Iniciar Sesión</div></a>
+            <a href="../login_formularios.php"><div class="btn"><img src="../imagenes/log_in.png" alt="Log_in">Iniciar Sesión</div></a>
             <a href="#"><div class="btn"><img src="../imagenes/log_out.png" alt="Log_out">Cerrar Sesión</div></a>
         </div>
     
@@ -33,6 +33,7 @@
     <div class="cuerpo">
         <?php
             include "conexion.php";
+            session_start();
 
             $idp=$_POST["idp"];
             if($_POST){

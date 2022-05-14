@@ -15,7 +15,7 @@
         <span>Panadería Fariña</span>
 
         <div class="mis_datos">
-            <a href="#"><div class="btn"><img src="../imagenes/log_in.png" alt="Log_in">Iniciar Sesión</div></a>
+            <a href="../login_formulario.php"><div class="btn"><img src="../imagenes/log_in.png" alt="Log_in">Iniciar Sesión</div></a>
             <a href="#"><div class="btn"><img src="../imagenes/log_out.png" alt="Log_out">Cerrar Sesión</div></a>
         </div>
     
@@ -34,7 +34,8 @@
 
         <?php
             include "conexion.php";
-            
+            session_start();
+
             $categoria=mysqli_query($db, "SELECT * FROM tcategoria") or die ("Fallo en la consulta");
                 if(mysqli_num_rows($categoria)>0){
                     while($cate=mysqli_fetch_array ($categoria) ) {
