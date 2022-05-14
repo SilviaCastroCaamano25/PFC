@@ -12,6 +12,10 @@
     $usuario=$_POST['usuario'];
     $email=$_POST['email'];
     $password=$_POST['password'];
+    /**
+     * Encripta la contraseña
+     */
+    $password=hash('sha512', $password);
 
     /**
      * Definimos la consulta SQL en la tabla
