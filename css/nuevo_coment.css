@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0;
+}
+
+
+/*Estilos del navegador de la página*/
+
+div.navegador{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    z-index: 1;
+}
+  
+div.submenu{
+    width: 150px;
+    border-radius: 4px;
+    margin: 3.5px;
+    padding: 5px;
+}
+  
+div.submenu a{
+    text-decoration: none;
+}
+
+div.submenu a .boton:hover{
+    font-weight: 600;
+}
+  
+div.submenu a .boton{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.05em;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+
+/*Estilos del cuerpo de la página*/
+
+.contenido{
+    margin: 15px;
+}
+
+.contenido a{
+    text-decoration: none;
+    padding: 5px;
+}
+
+.contenido a:hover{
+    font-weight: 600;
+}
+
+/*Modo claro de la página*/
+@media (prefers-color-scheme: light){
+    body{
+        background-color: white;
+    }
+
+    /*Modo claro del navegador*/
+    .navegador{
+        background-color: #ffd792;
+    }
+
+    div.submenu{
+        background-color: #ffae6a;
+        border: 1px solid black;
+    }
+
+    div.submenu:hover{
+        background-color: #ff8243;
+        box-shadow: 10px 5px 5px #c65314;
+    }
+
+    div.submenu a .boton{
+        color: black;
+    }
+
+    /*Modo claro del cuerpo*/
+
+    .contenido a{
+        border: 1px solid black;
+        color: black;
+    }
+
+}
+
+
+/*Modo oscuro de la página*/
+@media (prefers-color-scheme: dark){
+    body{
+        background-color: rgb(31, 31, 31);
+        color: black;
+    }
+
+    /*Modo oscuro del navegador*/
+    .navegador{
+        background-color: #ea9247;
+    }
+
+    div.submenu{
+        background-color: #d2691e;
+        border: 1px solid white;
+    }
+
+    div.submenu:hover{
+        background-color: #d2691e;
+        box-shadow: 10px 5px 5px #9b3c00;
+    }
+
+    div.submenu a .boton{
+        color: white;
+    }
+
+    /*Modo oscuro del cuerpo*/
+    .contenido p{
+        color: white;
+    }
+
+    .contenido a{
+        border: 1px solid white;
+        color: white;
+    }
+}

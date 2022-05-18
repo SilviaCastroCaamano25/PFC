@@ -32,16 +32,24 @@
     <!--Cuerpo de la página-->
     <div class="contenido">
 
+        <div class="formulario">
+            <p>Deja un comentario nuevo:</p>
+            <form action="nuevo_coment.php" method="post">
+                <textarea name="comentario_nuevo" id="comentario_nuevo" cols="45" rows="4" placeholder="Nuevo comentario ..."></textarea>
+                <input type="submit" style="margin-top: 10px;" value="Enviar">
+            </form>
+        </div>
+
         <?php
             include "conexion.php";
             session_start();
 
-            $vcomentarios_usuarios=mysqli_query($db, "SELECT * FROM vcomentarios_usuarios") or die ("Fallo en la consulta");
-                if(mysqli_num_rows($vcomentarios_usuarios)>0){
-                    while($com=mysqli_fetch_array ($vcomentarios_usuarios) ) {
+            $tcomentarios=mysqli_query($db, "SELECT * FROM tcomentarios ORDER BY tcomentarios.id DESC") or die ("Fallo en la consulta");
+                
+                if(mysqli_num_rows($tcomentarios)>0){
+                    while($com=mysqli_fetch_array ($tcomentarios) ) {
 
-                        echo "<div class='comentario'>";
-                            echo "<p><span>Usuario: </span>".$com["usuario"]."</p>";
+                        echo "<div style='padding: 15px;' class='comentario'>";
                             echo "<span style='margin-left:20px;';>Comentario: </span><p style='border: 1px solid black; padding: 20px; border-radius:4px;'>".$com["comentario"]."</p><br>";
                         echo "</div>";
 
@@ -50,7 +58,7 @@
                     echo "Error Comentarios";
                 }
 
-            mysqli_free_result ($vcomentarios_usuarios);
+            mysqli_free_result ($tcomentarios);
             mysqli_close ($db);
 
         ?>
