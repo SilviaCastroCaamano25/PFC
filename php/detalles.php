@@ -38,9 +38,9 @@
             $idc=$_POST["idc"];
             if($_POST){
                 
-                $vcategoria_producto_ingrediente=mysqli_query($db, "SELECT * FROM vcategoria_producto_ingrediente WHERE categoria='$idc'") or die ("Fallo en la consulta");
-                if(mysqli_num_rows($vcategoria_producto_ingrediente)>0){
-                    while($prod=mysqli_fetch_array ($vcategoria_producto_ingrediente) ) {
+                $vcategoria_producto=mysqli_query($db, "SELECT * FROM vcategoria_producto_ingrediente WHERE categoria='$idc'") or die ("Fallo en la consulta");
+                if(mysqli_num_rows($vcategoria_producto)>0){
+                    while($prod=mysqli_fetch_array ($vcategoria_producto) ) {
                         echo "<div class='produc'><form method='post' action='detalles_producto.php'>";
                             echo "<p><span>Producto: </span>".$prod["producto"]."</p>";
                             echo "<p><span>Precio: </span>".$prod["precio"]."€</p>";
@@ -52,7 +52,7 @@
                     echo "Error Producto";
                 }
 
-                mysqli_free_result ($vcategoria_producto_ingrediente);
+                mysqli_free_result ($vcategoria_producto);
                 mysqli_close ($db);
             }
         ?>
